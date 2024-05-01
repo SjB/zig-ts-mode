@@ -1,4 +1,4 @@
-;;; zig-ts-mode.el --- major mode for zig  -*- lexical-binding: t; -*-
+;;; zig-ts-mode.el --- major mode for zig  -*- lexical-binding: t -*-
 
 ;; Author: 2023 Rylee Lyman <rylee.alanza@gmail.com>
 ;;
@@ -485,11 +485,11 @@ This is written mainly to be used as `end-of-defun-function' for Zig."
 
 (defvar zig-ts-mode-map
   (let ((map (make-sparse-keymap)))
-	(define-key map (kbd "C-c C-b") 'zig-compile)
-	(define-key map (kbd "C-c C-f") 'zig-format-buffer)
-	(define-key map (kbd "C-c C-r") 'zig-run)
-	(define-key map (kbd "C-c C-t") 'zig-test-buffer)
-	map)
+        (define-key map (kbd "C-c C-b") 'zig-compile)
+        (define-key map (kbd "C-c C-f") 'zig-format-buffer)
+        (define-key map (kbd "C-c C-r") 'zig-run)
+        (define-key map (kbd "C-c C-t") 'zig-test-buffer)
+        map)
   "Keymap for Zig major mode.")
 
 (defvar zig--treesit-font-lock-setting
